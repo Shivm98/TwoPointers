@@ -23,7 +23,7 @@
 }
 
 .dark {
-	--primary-color: #1565d8;
+	--primary-color: rgb(21, 101, 216);
 	--primary-color-light: white;
 	--primary-color-dark: white;
 	--font-color: #333333;
@@ -31,6 +31,12 @@
 	--btn-primary-color: #1665da;
 	--btn-secondary-color: #1665da;
 	--btn-font-color: white;
+	--gradient-color:linear-gradient(
+        90deg
+        ,#7250d5 0,#aa47a5 50%,#f43a67 99%);
+	--reverse-gradient-color: linear-gradient(
+        90deg
+        ,#f43a67 0,#aa47a5 50%,#7250d5 99%);
 }
 
 .black {

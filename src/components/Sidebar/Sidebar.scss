@@ -1,0 +1,90 @@
+.sidebar{
+    width:100%;
+    max-width: 30rem;
+    // background: linear-gradient(
+    //     rgba(21, 101, 216,0.9), 
+    //     rgba(21, 101, 216,0.8)
+    //     // rgba(243, 36, 215, 0.7)
+    //     ), url('../../assets/images/white-abstract-background.jpg');
+    //     background-size: cover;
+    //     background-position: right;
+    background: var(--gradient-color);
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:-100%;
+    transition: all .5s;
+    z-index: 1000;
+
+    &:before{
+        content: "";
+        position: absolute;
+        left: -28%;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: hsla(0,0%,100%,.1);
+        -webkit-transform: skewX(-25deg);
+        -ms-transform: skewX(-25deg);
+        transform: skewX(-25deg );
+    }
+
+
+    &.show{
+        left: 0;
+    }
+
+    .logo-container{
+        font-size: 3rem;
+        color: var(--font-color);
+        font-weight: 900;
+        cursor: pointer;
+        padding-left: 4rem;
+        color: white    ;
+        margin-top: 4rem;
+    }
+
+
+    .navigation-list{
+        padding: 5rem 2rem 2rem 4rem;
+        list-style: none;
+        position: relative;
+        z-index: 100;
+       
+
+        .nav-item{
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: margin .3s;
+            position: relative;
+            padding: 1rem;
+
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 10%;
+                height:100%;
+                background: hsla(0,0%,100%,.1);
+                -webkit-transform: skewX(-25deg);
+                -ms-transform: skewX(-25deg);
+                transform: skewX(-25deg );
+                transition: width 0.3s;
+            }
+
+            &:hover::before{
+                width: 100%;
+            }
+            
+            .nav-link{
+                font-size: 1.5rem;
+                color: white;
+                text-decoration: none;
+                letter-spacing:1px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}
