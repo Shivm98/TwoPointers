@@ -1,27 +1,19 @@
 import React, {useState} from 'react';
 import './HomeScreen.scss';
-import HeroImg from '../../assets/images/hero-img.svg';
 import Button from '../../components/Button/Button';
-import SquareImg from '../../assets/images/square.png';
 import WebDevImg from '../../assets/images/webdev.svg';
-import Hero1 from '../../assets/images/hero1.jpg';
+import EcommerceImg from '../../assets/images/ecommerce.svg';
+import SocialNetworksImg from '../../assets/images/social-network.svg';
 import Particles from '../../components/Particals/Particles';
-import Navigation from '../../components/Navigation/Navigation';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import products from '../../data/products';
 
 const HomeScreen = () => {
-	const [showSidebar,setShowSidebar] = useState(false);
-
-	const toggleSidebar = () => {
-		setShowSidebar(showSidebar => !showSidebar);
-	}
+	
 
 	return (
 		<>
 			<header className='header'>
 				<Particles />
-				<Navigation toggle={toggleSidebar}/>
-				<Sidebar show={showSidebar}/>
 				<div className='container'>
 					<div className='data'>
 						<h1 className='primary-heading'>Shape your ideas into reality</h1>
@@ -37,7 +29,42 @@ const HomeScreen = () => {
 					</div>
 				</div>
 			</header>
-			<main></main>
+
+			<main>
+				<section className='products-section' id='products-section'>
+					<Particles/>
+					<div className='title'>
+						<h2 className='heading-secondary'>
+							Our Products
+						</h2>
+						<div className='underline'></div>
+					</div>
+					
+					<div className='container'>
+						{
+							products.map(product => (
+								<article className='article'>
+									<div className='content'>
+										<h3 className='title'>
+											{product.title}
+										</h3>
+										<p className='description'>
+										{product.description}
+										<br/>
+										<br/>
+										{product.description}
+										</p>
+										<Button>Know More</Button>
+									</div>
+									<div className='img-container'>
+										<img src={product.image} alt={product.title}/>
+									</div>
+								</article>
+							))
+						}
+					</div>
+				</section>
+			</main>
 		</>
 	);
 };

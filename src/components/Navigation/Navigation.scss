@@ -28,7 +28,8 @@
             font-size: 3rem;
             color: var(--font-color);
             cursor: pointer;
-            
+            z-index: 100;
+            position: relative;
         }
     }
 }
