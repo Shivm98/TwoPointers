@@ -1,0 +1,93 @@
+.particles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+
+	.particle {
+		position: absolute;
+		bottom: 0;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		border: 5px solid rgba(255, 0, 0, 0.203);
+
+		&.one {
+			left: 10%;
+			animation: one linear 20s infinite;
+		}
+		&.two {
+			left: 20%;
+			animation: two linear 10s infinite;
+		}
+		&.three {
+			left: 30%;
+			animation: three linear 15s infinite;
+		}
+		&.four {
+			left: 40%;
+			animation: four linear 12s infinite;
+		}
+		&.five {
+			left: 50%;
+			animation: five linear 25s infinite;
+		}
+	}
+}
+
+@keyframes one {
+	from {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-100rem) scale(3);
+		opacity: 0;
+	}
+}
+
+@keyframes two {
+	from {
+		transform: translateY(0) scale(4);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-100rem) scale(1);
+		opacity: 0;
+	}
+}
+
+@keyframes three {
+	from {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-100rem) scale(3);
+		opacity: 0;
+	}
+}
+
+@keyframes four {
+	from {
+		transform: translateY(0) scale(6);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-100rem) scale(1);
+		opacity: 0;
+	}
+}
+
+@keyframes five {
+	from {
+		transform: translateY(0) scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: translate(-100rem, -100rem) scale(1.5);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,76 @@
+:root {
+	--primary-color: rgba(90, 125, 232, 1);
+	--primary-color-light: rgb(104, 156, 253);
+	--primary-color-dark: rgb(40, 101, 253);
+
+	--btn-primary-color: #ee8c68;
+	--btn-secondary-color: #eb6b9d;
+
+	--font-color: rgb(253, 253, 253);
+}
+
+.green {
+	--primary-color: #007f5f;
+	--primary-color-light: #2bb693;
+	--primary-color-dark: #196854;
+	--font-color: rgb(253, 253, 253);
+	--font-color: #1b755f;
+	--font-color-light: #b9b9b9;
+	--font-color: #333333;
+	--btn-primary-color: #1b755f;
+	--btn-secondary-color: #1b755f;
+	--btn-font-color: white;
+}
+
+.dark {
+	--primary-color: #1565d8;
+	--primary-color-light: white;
+	--primary-color-dark: white;
+	--font-color: #333333;
+	--font-color-light: #7a7a7a;
+	--btn-primary-color: #1665da;
+	--btn-secondary-color: #1665da;
+	--btn-font-color: white;
+}
+
+.black {
+	--primary-color: #000000;
+	--primary-color-light: #222427;
+	--primary-color-dark: #000000;
+	--font-color: rgb(253, 253, 253);
+	--btn-primary-color: #1d1c1c;
+	--btn-secondary-color: #1f1f22;
+}
+.random {
+	--primary-color: #c72ed4;
+	--primary-color-light: #ffc8e8;
+	--primary-color-dark: #bf74e7;
+	--font-color: #332d4a;
+	--font-color-light: #c461d6;
+	--btn-primary-color: #ca30d6;
+	--btn-secondary-color: #7c2cff;
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	line-height: 1.6;
+	font-family: 'Poppins';
+	height: 2000px;
+
+	@media only screen and (max-width: 480px) {
+		& {
+			padding: 2rem;
+		}
+	}
+}

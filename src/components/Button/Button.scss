@@ -1,0 +1,39 @@
+.primary-btn {
+	padding: 1.2rem 3rem;
+	border-radius: 20px;
+
+	border: 2px solid var(--btn-secondary-color);
+	background-color: var(--btn-primary-color);
+	background-image: linear-gradient(
+		315deg,
+		var(--btn-primary-color) 0%,
+		var(--btn-secondary-color) 74%
+	);
+	box-shadow: 0 0px 0px 5px rgba(var(--btn-primary-color), 0.7);
+
+	// background-image: linear-gradient(
+	// 	180deg,
+	// 	var(--primary-color-light),
+	// 	var(--primary-color-dark)
+	// );
+	// border: 3px solid rgba(88, 134, 252, 0.76);
+	// box-shadow: 0 0 30px 10x var(--primary-color-light);
+
+	color: var(--btn-font-color);
+	letter-spacing: 1px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	cursor: pointer;
+	filter: brightness(110%);
+	transition: all 0.2s;
+	transform: scale(1);
+
+	&:hover {
+		filter: brightness(105%);
+		transform: scale(1.03);
+	}
+
+	&:active {
+		transform: translateY(1px) scale(1);
+	}
+}
