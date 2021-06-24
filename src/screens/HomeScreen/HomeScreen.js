@@ -51,7 +51,7 @@ const HomeScreen = () => {
 				</section>
 
 				<section className='services-section'>
-					<SectionTitle>We Provide the best services</SectionTitle>
+					<SectionTitle>Services</SectionTitle>
 					<div className='container'>
 						{
 							services.map(service => (
