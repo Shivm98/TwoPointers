@@ -1,0 +1,20 @@
+.title{
+    text-align: center;
+    margin: 10rem auto 5rem auto; 
+
+    .heading-secondary{
+        font-size: 4rem;
+        margin: 0 auto;
+        background: var(--gradient-color);
+        background-clip: text;
+        color: transparent;
+        width: max-content;
+        }
+
+    .underline{
+        width:6rem;
+        height: 0.3rem;
+        background: #aa47a5;
+        margin: 0 auto;
+    }
+}
